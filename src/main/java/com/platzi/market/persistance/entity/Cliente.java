@@ -14,6 +14,8 @@ public class Cliente {
 
     private String nombre;
     private String apellidos;
+
+    @Column(length = 10)
     private Integer celular;
     private String direccion;
 
