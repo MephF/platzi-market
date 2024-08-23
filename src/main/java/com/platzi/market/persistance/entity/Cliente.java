@@ -15,8 +15,8 @@ public class Cliente {
     private String nombre;
     private String apellidos;
 
-    @Column(length = 10)
-    private Integer celular;
+    @Column(columnDefinition = "BIGINT")
+    private Long celular;
     private String direccion;
 
     @Column(name = "correo_electronico")
@@ -49,11 +49,11 @@ public class Cliente {
         this.apellidos = apellidos;
     }
 
-    public Integer getCelular() {
+    public Long getCelular() {
         return celular;
     }
 
-    public void setCelular(Integer celular) {
+    public void setCelular(Long celular) {
         this.celular = celular;
     }
 

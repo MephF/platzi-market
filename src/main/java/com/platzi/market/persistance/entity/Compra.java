@@ -31,7 +31,7 @@ public class Compra {
     private Cliente cliente;
 
     @OneToMany(mappedBy = "compra")
-    private List<ComprasProducto> productos;
+    private List<ComprasProducto> comprasProductos;
 
     public Integer getIdCompra() {
         return idCompra;

@@ -26,7 +26,7 @@ public class Producto {
     private Double precioVenta;
 
     @Column(name = "cantidad_stock")
-    private String cantidadStock;
+    private Integer cantidadStock;
 
     private boolean estado;
 
@@ -77,11 +77,11 @@ public class Producto {
         this.precioVenta = precioVenta;
     }
 
-    public String getCantidadStock() {
+    public Integer getCantidadStock() {
         return cantidadStock;
     }
 
-    public void setCantidadStock(String cantidadStock) {
+    public void setCantidadStock(Integer cantidadStock) {
         this.cantidadStock = cantidadStock;
     }
 
